@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAGS EUPHORIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+        }
+
+        .fullnav1 {
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            width: 100%;
+            margin-top: -80px;
+            height: 85px;
+
+        }
+
+        #logo {
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            text-align: center;
+            /* word-spacing: 5px; */
+            /* letter-spacing: 0.3px; */
+            font-weight: bolder;
+            font-family: system-ui, sans-serif;
+            display: flex;
+            align-items: center !important;
+            height: 80px;
+        }
+
+        #logo h1 a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        #logo a i {
+            font-size: 40px;
+        }
+
+        .nav1 {
+            background-color: black;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .nav1 a {
+
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.5s;
+            font-weight: 500;
+
+        }
+
+        .nav1 a:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+        #navbtn {
+            background-color: rgb(0, 0, 0);
+            border: none;
+            display: flex;
+            align-items: center;
+            display: none;
+        }
+
+        #navbtn i {
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+        }
+
+
+        /* ----------- off canvas --------- */
+
+        .fullnav2 {
+            background-color: rgb(0, 0, 0);
+            height: 100vh !important;
+            width: 270px !important;
+            /* float: right; */
+            display: none;
+            position: fixed !important;
+            right: -270px;
+            transition: 0.3s;
+
+        }
+
+        #logo1 {
+            margin: 10px;
+        }
+
+        #logo1 h3 a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        #logo1 h3 a i {
+            font-size: 30px;
+        }
+
+        .nav2 {
+            margin-left: 30px;
+        }
+
+        .nav2 a {
+            display: flex;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px;
+            font-weight: 500;
+            transition: 0.5s;
+            width: 230px;
+        }
+
+        .nav2 a:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            width: 180px;
+        }
+
+        @media screen and (max-width : 868px) {
+
+            #logo h1 a {
+                font-size: 20px;
+            }
+
+            #logo a i {
+                font-size: 30px;
+            }
+
+            #logo {
+                height: 70px;
+            }
+
+            .nav1 {
+                display: none;
+            }
+
+            #navbtn {
+                display: block;
+            }
+
+            .fullnav2 {
+                display: block !important;
+                position: fixed !important;
+                height: 100vh !important;
+                margin-top: -55px;
+                
+            }
+
+            .fullnav1 {
+                margin-top: -80px;
+                height: 70px;
+            }
+        }
+
+
+
+
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 80px;
+        }
+
+        h2 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+        .bag-item {
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .bag-item:hover {
+            transform: scale(1.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .bag-item img {
+            border-radius: 10px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .bag-item p {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="fullnav1">
+
+        <div id="logo">
+            <H1> <a href="">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    BAGS EUPHORIA </a></H1>
+        </div>
+
+        <div class="nav1">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#men">Men</a>
+            <a href="#women">Women</a>
+            <a href="gallary.html">Gallary</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <button id="navbtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+
+    <!-- -----------------OFF CANVAS --------- -->
+
+    <div class="fullnav2">
+
+        <div id="logo1">
+            <h3> <a href="">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    BAGS EUPHORIA
+                </a></h3>
+        </div>
+
+        <div class="nav2">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#men">Men</a>
+            <a href="#women">Women</a>
+            <a href="gallary.html">Gallary</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container py-5 text-center">
+        <h2>Our Bags Collection Gallery</h2>
+
+
+
+        <div class="tab-content mt-4">
+            <div class="tab-pane fade show active" id="men">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/menc1.jpeg" class="img-fluid" alt="Crossbody">
+                        <p>Crossbody Bag - $50</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/menc2.jpeg" class="img-fluid" alt="Backpack">
+                        <p>Backpack - $60</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/menc3.jpeg" class="img-fluid" alt="Messenger">
+                        <p>Messenger Bag - $55</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/menc4.jpeg" class="img-fluid" alt="Duffle">
+                        <p>Duffle Bag - $70</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/mop1.jpeg" class="img-fluid" alt="Leather Purse">
+                        <p>Leather Purse - $30</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/mop2.jpeg" class="img-fluid" alt="Wallet">
+                        <p>Wallet - $25</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/mop3.jpeg" class="img-fluid" alt="Leather Purse">
+                        <p>Leather Purse - $30</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/mop4.jpeg" class="img-fluid" alt="Wallet">
+                        <p>Wallet - $25</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/met1.jpeg" class="img-fluid" alt="Tote Bag">
+                        <p>Tote Bag - $40</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/ment2.jpeg" class="img-fluid" alt="Leather Tote">
+                        <p>Leather Tote - $50</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/ment3.jpeg" class="img-fluid" alt="Canvas Tote">
+                        <p>Canvas Tote - $35</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/ment4.jpeg" class="img-fluid" alt="Classic Tote">
+                        <p>Classic Tote - $45</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/woc1.jpeg" class="img-fluid" alt="Tote">
+                    <p>Tote Bag - $45</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/woc2.jpeg" class="img-fluid" alt="Shoulder">
+                    <p>Shoulder Bag - $50</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/woc3.jpeg" class="img-fluid" alt="Clutch">
+                    <p>Clutch Bag - $40</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/woc4.jpeg" class="img-fluid" alt="Satchel">
+                    <p>Satchel Bag - $55</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/wop1.jpeg" class="img-fluid" alt="Hand Purse">
+                    <p>Hand Purse - $35</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/wop2.jpeg" class="img-fluid" alt="Designer Wallet">
+                    <p>Designer Wallet - $40</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/wop3.jpeg" class="img-fluid" alt="Hand Purse">
+                    <p>Hand Purse - $35</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/wop4.jpeg" class="img-fluid" alt="Designer Wallet">
+                    <p>Designer Wallet - $40</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/womt1.jpeg" class="img-fluid" alt="Tote Bag">
+                    <p>Tote Bag - $45</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/womt2.jpeg" class="img-fluid" alt="Luxury Tote">
+                    <p>Luxury Tote - $55</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/womt3.jpeg" class="img-fluid" alt="Casual Tote">
+                    <p>Casual Tote - $40</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/womt4.jpeg" class="img-fluid" alt="Elegant Tote">
+                    <p>Elegant Tote - $50</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/wop8.jpeg" class="img-fluid" alt="Luxury Purse">
+                    <p>Luxury Purse - $65</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/wop7.jpeg" class="img-fluid" alt="Casual Purse">
+                    <p>Casual Purse - $40</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/wop6.jpeg" class="img-fluid" alt="Elegant Purse">
+                    <p>Elegant Purse - $50</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/wop5.jpeg" class="img-fluid" alt="Classic Purse">
+                    <p>Classic Purse - $55</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <footer style="background-color: #333; color: white; padding: 30px 0; text-align: center;">
+        <div class="footer-content">
+            <p>&copy; 2025 Bags Euphoria. All Rights Reserved.</p>
+
+            <div class="social-icons" style="margin: 20px 0;">
+                <a href="" style="margin: 0 15px; text-decoration: none; color: white;">
+                    <i class="fab fa-facebook-f" style="font-size: 24px;"></i>
+                </a>
+                <a href="" style="margin: 0 15px; text-decoration: none; color: white;">
+                    <i class="fab fa-instagram" style="font-size: 24px;"></i>
+                </a>
+                <a href="" style="margin: 0 15px; text-decoration: none; color: white;">
+                    <i class="fab fa-twitter" style="font-size: 24px;"></i>
+                </a>
+            </div>
+
+
+            <p style="font-size: 14px; margin-top: 10px;">Crafted with love for the fashion-forward.</p>
+        </div>
+    </footer>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#navbtn').click(function () {
+                $('.fullnav2').css({ 'right': '0' })
+            })
+
+
+            $('').click(function () {
+                $('.fullnav2').css({ 'right': '-270px' })
+            })
+        })
+    </script>
+
+</body>
+
+</html>

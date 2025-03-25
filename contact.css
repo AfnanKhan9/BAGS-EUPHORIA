@@ -1,0 +1,330 @@
+body, html {
+
+    font-family:  system-ui, sans-serif !important;
+}
+
+
+
+.fullnav1 {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    margin-top: -80px;
+    z-index: 1000;
+
+}
+
+#logo {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    text-align: center;
+    /* word-spacing: 5px; */
+    /* letter-spacing: 0.3px; */
+    font-weight: bolder !important;
+    font-family: system-ui, sans-serif !important;
+    display: flex;
+    align-items: center !important;
+    /* height: 65px !important; */
+}
+
+#logo h1 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#logo a i {
+    font-size: 40px;
+}
+
+.nav1 {
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav1 a {
+
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    font-weight: 500 ;
+
+}
+
+.nav1 a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#navbtn {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+#navbtn i {
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ----------- off canvas --------- */
+
+.fullnav2 {
+    background-color:rgb(0, 0, 0);
+    height: 100vh !important;
+    width: 270px !important;
+    /* float: right; */
+    display: none;
+    position: fixed !important;
+    right: -270px;
+    transition: 0.3s;
+    z-index: 1000;
+
+}
+
+#logo1 {
+    margin: 10px;
+}
+
+#logo1 h3 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#logo1 h3 a i {
+    font-size: 30px;
+}
+
+.nav2 {
+    margin-left: 30px;
+}
+
+.nav2 a {
+    display: flex;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    transition: 0.5s;
+    width: 230px;
+}
+
+.nav2 a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 180px;
+}
+
+@media screen and (max-width : 868px) {
+
+    #logo h1 a {
+        font-size: 20px !important;
+    }
+
+    #logo a i {
+        font-size: 30px !important;
+    }
+
+    .nav1 {
+        display: none;
+    }
+
+    #navbtn {
+        display: block;
+    }
+
+    .fullnav2 {
+        display: block !important;
+        position: fixed !important;
+        height: 100vh !important;
+        margin-top: -58px;
+    }
+
+    .fullnav1{
+        margin-top: -64px;
+        height: 70px;
+    }
+
+    .bimg{
+        margin-top: 63px !important;
+        height: 70vh !important;
+    }
+}
+
+
+
+
+
+
+
+.bimg {
+    position: relative;
+    background: url('assets/contactbg.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.bimg::before, .services-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content, .services-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 20px;
+}
+/* 
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+} */
+
+p {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+     h1 {
+        font-size: 25px !important;
+    }
+
+     p {
+        font-size: 18px !important;
+    } 
+
+    .col-md-6 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .col-md-6 li{
+        font-size: 17px;
+    }
+
+    .feedback-section{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width : 768px){
+ .feedback-section{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width : 412px){
+    .bimg{
+        height: 100vh !important;
+    }
+}
+
+.services-section {
+    position: relative;
+    padding: 50px 15px;
+    /* background: url('https://as2.ftcdn.net/jpg/05/06/20/13/1000_F_506201358_3AxMTSbWHoT1H5qwWYJgppSgRVeiU6Jp.jpg') no-repeat center center; */
+    background-size: cover;
+    text-align: left;
+    color: white;
+    background: #1b1616;
+}
+
+.services-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    list-style: circle;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.service-img {
+    width: 100%;
+    max-width: 450px;
+    opacity: 0.8;
+    display: block;
+    float: right;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-top: 3px solid #555;
+}
+
+.footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #bbb;
+    text-decoration: underline;
+}
+.feedback-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    transition: 0.3s;
+}
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+.feedback-section {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+
+

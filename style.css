@@ -1,0 +1,687 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+
+.fullnav1 {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    margin-top: -70px;
+
+}
+
+#logo {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    text-align: center;
+    /* word-spacing: 5px; */
+    /* letter-spacing: 0.3px; */
+    font-weight: bolder;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    align-items: center !important;
+}
+
+#logo h1 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+}
+
+#logo a i {
+    font-size: 40px;
+}
+
+.nav1 {
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav1 a {
+
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+    font-weight: 500 ;
+
+}
+
+.nav1 a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#navbtn {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+#navbtn i {
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ----------- off canvas --------- */
+
+.fullnav2 {
+    background-color:rgb(0, 0, 0);
+    height: 100vh !important;
+    width: 270px !important;
+    /* float: right; */
+    display: none;
+    position: fixed !important;
+    right: -270px;
+    transition: 0.3s;
+
+}
+
+#logo1 {
+    margin: 10px;
+}
+
+#logo1 h3 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#logo1 h3 a i {
+    font-size: 30px;
+}
+
+.nav2 {
+    margin-left: 30px;
+}
+
+.nav2 a {
+    display: flex;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    transition: 0.5s;
+    width: 230px;
+}
+
+.nav2 a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 180px;
+}
+
+@media screen and (max-width : 868px) {
+
+    #logo h1 a {
+        font-size: 20px;
+    }
+
+    #logo a i {
+        font-size: 30px;
+    }
+
+    #logo{
+        height: 60px;
+    }
+
+    .nav1 {
+        display: none;
+    }
+
+    #navbtn {
+        display: block;
+    }
+
+    .fullnav2 {
+        display: block !important;
+        position: fixed !important;
+        height: 100vh !important;
+        margin-top: -55px;
+    }
+
+    .fullnav1{
+        margin-top: -55px;
+        height: 70px;
+    }
+}
+
+
+
+
+/* -------------sec2------------- */
+ .img1 {
+    background-image: url('assets/img1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 70px;
+} 
+
+.img1 h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 22%;
+    font-size: 70px;
+    font-weight: light;
+    word-spacing: 10px;
+
+}
+
+@media screen and (max-width : 868px) {
+
+    .img1 h1 {
+        font-size: 35px;
+        margin-bottom: -30px;
+        height: fit-content;
+         padding-top: 260px;
+    }
+
+    .img1{
+        margin-top: 55px;
+    }
+} 
+
+
+
+
+/* -----------------------sec3------------------ */
+.sec3 {
+    text-align: center;
+}
+
+.sec3 h1 {
+    font-size: 70px;
+}
+
+.sec3 h4 {
+    margin-top: -30px;
+    font-size: 20px;
+}
+
+.sec3 button {
+    font-family: system-ui,sans-serif;
+    font-weight: 600;
+    /* padding: 5px; */
+    /* font-size: large; */
+    border: 1px solid black;
+    margin: 10px;
+    font-size: large;
+    padding: 10px 20px;
+}
+
+.sec3 button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+    .sec3 h1 {
+        font-size: 27px !important;
+    }
+
+    .sec3 h4 {
+        font-size: 12px !important;
+        margin-top: -7px !important;
+    }
+
+    .sec3 button {
+        font-size: smaller !important;
+        padding: 5px 16px !important; 
+        width: fit-content; 
+        margin: 5px 0; 
+        font-weight: bold !important;
+    }
+}
+
+/* ------------------Tablet view--------- */
+@media screen and (max-width: 768px) {
+    .sec3 h1 {
+        font-size: 40px;
+    }
+
+    .sec3 h4 {
+        font-size: 14px;
+        margin-top: -7px}
+
+    .sec3 button {
+        font-size: small;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+}
+
+.sec3imgs{
+    display: flex; 
+    justify-content: space-evenly; 
+    gap: 10px; 
+    flex-wrap: nowrap;
+  
+}
+.sec3imgs img {
+    width: 33.33%; 
+    height: auto; 
+    object-fit: cover;  
+}
+
+@media screen and (max-width: 768px){
+    .sec3imgs img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec3imgs img {
+        width: 30%; 
+        margin-top: 22px;
+    }
+}
+
+
+/* ----------------sec4 space---------------*/
+
+.responsive-video {
+    width: 100% ;
+    height: auto;
+    max-width: 100%;
+  }
+  
+
+
+
+/* -------------------------sec5 ------------------------ */
+
+.sec5 {
+    text-align: center;
+}
+
+.sec5 h1 {
+    font-size: 70px;
+}
+
+.sec5 h4 {
+    margin-top: -30px;
+    font-size: 20px;
+}
+
+.sec5 button {
+    font-family: system-ui,sans-serif;
+    font-weight: 600;
+    /* padding: 5px; */
+    /* font-size: large; */
+    border: 1px solid black;
+    margin: 10px;
+    font-size: large;
+    padding: 10px 20px;
+}
+
+.sec5 button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+    .sec5 h1 {
+        font-size: 27px !important;
+    }
+
+    .sec5 h4 {
+        font-size: 12px !important;
+        margin-top: -7px !important;
+    }
+
+    .sec5 button {
+        font-size: smaller !important;
+        padding: 5px 16px !important;
+        width: fit-content; 
+        margin: 5px 0; 
+        font-weight: bold;
+    }
+}
+
+/* ------------------Tablet view--------- */
+@media screen and (max-width: 768px) {
+    .sec5 h1 {
+        font-size: 40px;
+    }
+
+    .sec5 h4 {
+        font-size: 14px;
+        margin-top: -7px;
+
+    }
+
+    .sec5 button {
+        font-size: small;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+}
+
+.sec5imgs{
+    display: flex; 
+    justify-content: space-evenly; 
+    gap: 10px; 
+    flex-wrap: nowrap; 
+  
+}
+.sec5imgs img {
+    width: 33.33%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+@media (max-width: 768px) {
+    .sec5imgs img {
+        width: 30%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .sec5imgs img {
+        width: 30%; 
+        margin-top: 22px;
+    }
+}
+
+
+/* ----------sec6------------ */
+
+.sec6img img{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;  
+    margin-top: 100px;  
+}
+
+.sec6 {
+    text-align: center;
+}
+
+.sec6 h1 {
+    font-size: 50px;
+}
+
+.sec6 h4 {
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+.sec6 button {
+    font-family: system-ui,sans-serif;
+    font-weight: 600;
+    /* padding: 5px; */
+    /* font-size: large; */
+    border: 1px solid black;
+    margin: 10px;
+    font-size: large;
+    padding: 10px 20px;
+}
+
+.sec6 button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+    .sec6 h1 {
+        font-size: 27px !important;
+    }
+
+    .sec6 h4 {
+        font-size: 12px !important;
+        margin-top: -7px !important;
+    }
+
+    .sec6 button {
+        font-size: smaller !important;
+        padding: 5px 16px !important;
+        width: fit-content; 
+        margin: 5px 0; 
+        font-weight: bold;
+    }
+}
+
+/* ------------------Tablet view--------- */
+@media screen and (max-width: 768px) {
+    .sec6 h1 {
+        font-size: 40px;
+    }
+
+    .sec6 h4 {
+        font-size: 14px;
+        margin-top: -7px;
+
+    }
+
+    .sec6 button {
+        font-size: small;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+/* ---------------sec7------- */
+
+.sec7{
+    margin-top: 50px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    
+}
+
+.brand-item {
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: fit-content;
+}
+
+.brand-item img {
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.brand-item p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brand-item:hover {
+    transform: scale(1.05);
+}
+
+.brand-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .brand-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}
+
+
+/* --------------------sec8-------------- */
+
+
+#parentp1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-left: 20px; */
+    background-color: #f0ecec;
+    margin: 0;
+    /* height: 100vh; */
+}
+
+.p1card {
+    width: 250px;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+
+.im {
+    width: 60px;
+}
+
+.text1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #parentp1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .p1card {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:1770px) {
+    #parentp1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+
+/* -----------------sec9--------------- */
+
+@media (max-width: 768px) {
+    footer {
+      padding: 20px 10px;
+    }
+
+    .social-icons {
+      margin: 15px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+    }
+
+    .footer-content p {
+      font-size: 14px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

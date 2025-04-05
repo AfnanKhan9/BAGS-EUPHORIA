@@ -21,7 +21,7 @@
     <div class="fullnav1">
 
         <div id="logo">
-            <h1> <a href="">
+            <h1> <a href="index.html">
                     <i class="fa-solid fa-bag-shopping"></i>
                     BAGS EUPHORIA </a></h1>
         </div>
@@ -46,7 +46,12 @@
     <div class="fullnav2">
 
         <div id="logo1">
-            <h3> <a href="">
+            <h3>
+                <button id="navbtncls">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                 <a href="index.html">
                     <i class="fa-solid fa-bag-shopping"></i>
                     BAGS EUPHORIA
                 </a></h3>
@@ -247,7 +252,7 @@
             })
 
 
-            $('').click(function () {
+            $('#navbtncls').click(function () {
                 $('.fullnav2').css({ 'right': '-270px' })
             })
         })

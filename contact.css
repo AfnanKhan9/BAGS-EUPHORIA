@@ -73,6 +73,7 @@ body, html {
     display: flex;
     align-items: center;
     display: none;
+    cursor: pointer;
 }
 
 #navbtn i {
@@ -103,7 +104,7 @@ body, html {
 #logo1 h3 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 20px ;
     font-weight: bolder;
 }
 
@@ -130,6 +131,19 @@ body, html {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     width: 180px;
+}
+
+#navbtncls {
+    color: white;
+    background-color: black;
+    border: none;
+    /* margin-right: 10px; */
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#navbtncls i {
+   font-size: 30px;
 }
 
 @media screen and (max-width : 868px) {

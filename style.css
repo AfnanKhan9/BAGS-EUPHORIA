@@ -69,6 +69,7 @@ body {
     display: flex;
     align-items: center;
     display: none;
+    cursor: pointer;
 }
 
 #navbtn i {
@@ -125,6 +126,20 @@ body {
     width: 180px;
 }
 
+
+#navbtncls {
+     color: white;
+     background-color: black;
+     border: none;
+     /* margin-right: 10px; */
+     margin-left: 5px;
+     cursor: pointer;
+}
+
+#navbtncls i {
+    font-size: 30px;
+}
+
 @media screen and (max-width : 868px) {
 
     #logo h1 a {
@@ -168,7 +183,7 @@ body {
     background-image: url('assets/img1.webp');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 70px;
 } 
 
@@ -187,9 +202,9 @@ body {
 
     .img1 h1 {
         font-size: 35px;
-        margin-bottom: -30px;
+        /* margin-bottom: -30px; */
         height: fit-content;
-         padding-top: 260px;
+         /* padding-top: 260px; */
     }
 
     .img1{
@@ -276,7 +291,7 @@ body {
   
 }
 .sec3imgs img {
-    width: 33.33%; 
+    width: 30%; 
     height: auto; 
     object-fit: cover;  
 }
@@ -385,7 +400,7 @@ body {
   
 }
 .sec5imgs img {
-    width: 33.33%; 
+    width: 30%; 
     height: auto; 
     object-fit: cover; 
 }

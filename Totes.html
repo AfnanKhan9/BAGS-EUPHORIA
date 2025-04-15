@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totes Bag</title>
+    <link rel="stylesheet" href="style1.css"> 
+</head>
+<body>
+    
+    <h1 class="custom-heading">Welcome to Our Totes Collection</h1>
+    <div class="divider"></div>     
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Category</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="Backpacks.html">Backpack</a>
+                <a href="CrossBody.html">Crossbody</a>
+                <a href="Totes.html">Totes</a>
+            </div>
+        </div>
+    
+    <div id="Parent">
+    <div class="card">
+        <img src="assets\cas25_deb_a0.webp" alt="Bag">
+        <h3>Wesley Tote In Signature Denim</h3>
+        <p>Price: £295</p>
+        <div class="color-options">
+            <div class="color-circle" style="background: black;"></div>
+            <div class="color-circle" style="background: #8B4513;"></div>
+            <div class="color-circle" style="background: #D32F2F;"></div>
+        </div>
+        <a href="Totes1.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="card">
+        <img src="assets\ch757_blk_a0.webp" alt="Bag">
+        <h3>Relay Tote Bag 34</h3>
+        <p>Price: £395</p>
+        <div class="color-options">
+            <div class="color-circle" style="background: #333;"></div>
+            <div class="color-circle" style="background: #1E90FF;"></div>
+            <div class="color-circle" style="background: #008000;"></div>
+        </div>
+        <a href="Totes2.html" class="btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <img src="assets\cr681_b4bar_a0.webp" alt="Bag">
+        <h3> Ace Tote Bag 26</h3>
+        <p>Price: £320</p>
+        <div class="color-options">
+            <div class="color-circle" style="background: #556B2F;"></div>
+            <div class="color-circle" style="background: #FFD700;"></div>
+            <div class="color-circle" style="background: #C71585;"></div>
+        </div>
+        <a href="Totes3.html" class="btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <img src="assets\cy771_blk_a0.webp" alt="Bag">
+        <h3>Wesley Totes</h3>
+        <p>Price: £450</p>
+        <div class="color-options">
+            <div class="color-circle" style="background: #800000;"></div>
+            <div class="color-circle" style="background: #4682B4;"></div>
+            <div class="color-circle" style="background: #808080;"></div>
+        </div>
+        <a href="Totes4.html" class="btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <img src="assets\cy772_chr_a0.webp" alt="Bag">
+        <h3>Wesley Tote In Signature Canvas</h3>
+        <p>Price: £275</p>
+        <div class="color-options">
+            <div class="color-circle" style="background: #FF4500;"></div>
+            <div class="color-circle" style="background: #2E8B57;"></div>
+            <div class="color-circle" style="background: #4B0082;"></div>
+        </div>
+        <a href="Totes5.html" class="btn">Buy Now</a>
+    </div> 
+</div>
+        <script>
+       
+function toggleDropdown() {
+    var dropdown = document.getElementById("dropdownMenu");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
+
+document.addEventListener("click", function(event) {
+    var dropdown = document.getElementById("dropdownMenu");
+    var button = document.querySelector("button");
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.style.display = "none";
+    }
+});
+    </script>
+
+</body>
+</html>

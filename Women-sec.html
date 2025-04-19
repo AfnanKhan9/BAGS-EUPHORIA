@@ -19,7 +19,7 @@
 
 <body>
 
-    
+
     <div class="fullnav1">
 
         <div id="logo">
@@ -309,6 +309,8 @@
             </div>
             <a href="Hand5.html" class="btn">Buy Now</a>
         </div>
+
+        
         <script>
 
             function toggleDropdown() {
@@ -318,7 +320,7 @@
 
             document.addEventListener("click", function (event) {
                 var dropdown = document.getElementById("dropdownMenu");
-                var button = document.querySelector("button");
+                var button = document.querySelector(".dropdown-btn");
                 if (!button.contains(event.target) && !dropdown.contains(event.target)) {
                     dropdown.style.display = "none";
                 }
